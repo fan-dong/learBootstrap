@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>下拉菜单-菜单项状态</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"">
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="dropdown">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdownMenu">下拉菜单
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+      <li role="presentation" class="dropdown-header">水果</li>
+      <li role="presentaiton" class="active"><a href="#" role="menuitem" tabindex="-1">梨子</a></li>
+      <li role="presentaiton"><a href="#" role="menuitem" tabindex="-1">桃子</a></li>
+      <li role="presentaiton"><a href="#" role="menuitem" tabindex="-1">香蕉</a></li>
+      <li role="presentaiton"><a href="#" role="menuitem" tabindex="-1">葡萄</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation" class="dropdown-header">食物</li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">面条</a></li>
+      <li role="presentation" class="disabled"><a href="#" role="menuitem" tabindex="-1">米饭</a></li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">馒头</a></li>
+    </ul>
+  </div>
+  <div>
+    .active当前状态
+    .disabled 禁用状态
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>模态弹出框</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"">
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{padding：50px 0 0 0;}
+  </style>
+</head>
+<body>
+	<button type="button" class="btn btn-default">点击我</button>
+	<div class="modal" id="mymodal">
+		<div class="dailog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">模态弹出框</h4>
+				</div>
+				<div class="modal-body">
+					<p>模态弹窗主体内容</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<button class="btn btn1 btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">大的模态弹框</button>
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dailog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">模态弹出框标题</h4>
+				</div>
+				<div class="modal-body">
+					<p>模态弹窗主体内容</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(function(){
+		$('.btn').click(function(){
+			$("#mymodal").modal('toggle');
+		})
+	})
+</script>
+</html>

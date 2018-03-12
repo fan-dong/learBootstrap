@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>下拉菜单-对齐方式</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"">
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <h4>使用pull-right类使下拉菜单与父容器右边对齐</h4>
+  <div class="dropdown">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdownMenu">
+      下拉菜单
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu">
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">苹果</a></li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-">葡萄</a></li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-">葡萄</a></li>
+    </ul>
+  </div>
+  <h4>使用dropdown-menu-right类使下拉菜单与父容器右边对齐</h4>
+  <div class="dropdown">
+    <button type="button" class="btn btn-default dropdown-togggle" data-toggle="dropdown" id="menu2">
+      爱好
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu2">
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">水果</a></li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">食物</a></li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">电影</a></li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">运动</a></li>
+    </ul>
+  </div>
+
+  <h4>使用dropdown-menu-left类使下拉菜单与父容器右边对齐</h4>
+  <div class="dropdown">
+    <button type="button" class="btn btn-default dropdown-togggle" data-toggle="dropdown" id="menu2">
+      爱好
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="menu2">
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">水果</a></li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">食物</a></li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">电影</a></li>
+      <li role="presentation"><a href="#" role="menuitem" tabindex="-1">运动</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>

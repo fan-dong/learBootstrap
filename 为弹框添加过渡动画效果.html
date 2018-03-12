@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>模态弹出框</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"">
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{padding：50px 0 0 0;}
+  </style>
+</head>
+	<body>
+		<!--data-target触发模态弹出框元素-->
+		<button class="btn btn-primary" data-toggle="modal" data-target="#mymodal-data" type="button">通过data-target触发</button>
+		<!--模态弹出窗内容-->
+		<div class="modal fade" id="mymodal-data" tabindex="-1" role="dailog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dailog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span>
+							<span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title">弹出框标题</h4>
+					</div>
+					<div class="modal-body">
+						<p>模态弹出框主体内容</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary">保存</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<pre>
+			可通过给“.modal”增加类名“fade”为模态弹出框增加一个过渡动画效果。
+		</pre>
+	</body>
+</html>
